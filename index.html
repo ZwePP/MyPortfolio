@@ -3,214 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zwe Pyi Phyo Portfolio</title>
+    <title>Zwe Pyi Phyo - AI Systems Engineer</title>
     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
-    <style>
-        @import "~@flaticon/flaticon-uicons/css/brands/all";
-    </style>
 </head>
 <body>
+    <!-- Navigation Banner -->
     <nav id="navbar">
-        <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-        <ul>
-            <li><a href="#home">Home</a></li></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section id="home" class="hero">
-        <img src="img/profile.jpg" alt="Zwe Pyi Phyo" class="hero-img">
-        <div class="hero-content">
-            <h1>Hi, I'm <span class="highlight">Zwe</span></h1>
-            <h2>AI Systems Engineer (Student)</h2>
-            <p>With background in data science and tech support. My focus is turning data into an actionable insight and creating a reliable system.</p>
-            <div class="hero-btns">
-                <a href="#projects" class="btn">View Projects</a>
-                <a href="https://github.com/ZwePP" target="_blank" class="btn">
-                    Github
-                </a>
-                <a href="https://github.com/ZwePP" target="_blank" class="btn">
-                    LinkedIn
-                </a>
+        <div class="nav-container">
+            <div class="logo">Zwe</div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-        </div>
-    </section>
-
-    <section id="projects" class="container">
-        <h2>Featured Projects</h2>
-        
-        <div class="project-card">
-            <h3>STIU Bot</h3>
-            <div class="project-details">
-                <p><strong>About:</strong> AI-powered chatbot that answers university-related questions using university handbook data.</p>
-                <p>
-                    <strong>What it does:</strong>
-                    The bot answers student queries about university, rules and policies. It uses Retrieval-Augmented Generation (RAG) to provide accurate, context-based responses. The handbook is stored in a vector database and the system performs similarity search.
-                </p>
-                <div class="tech-stack">
-                    <span>Python</span>
-                    <span>LangChain</span>
-                    <span>HuggingFace</span>
-                    <span>ChromaDB</span>
-                </div>
-                <a href="https://github.com/ZwePP/stiu_bot" target="_blank" class="btn">View Code</a>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <h3>Credit Card Fraud Detection</h3>
-            <div class="project-details">
-                <p><strong>About:</strong> Training a model to detect a fraud from a Kaggle imbalance dataset.</p>
-                <p>
-                    <strong>What it does:</strong>
-                    This project focuses on detecting fraudulent transactions using machine learning techniques. The dataset is cleaned and balanced to contain 50% fraud and 50% non-fraud samples. Two classification models are implemented and compared: Logistic Regression and XGBoost.
-                </p>
-                <div class="tech-stack">
-                    <span>Python</span>
-                    <span>Pandas</span>
-                    <span>Seaborn</span>
-                    <span>Matplotlib</span>
-                    <span>Scikit-Learn</span>
-                    <span>XGBoost</span>
-                    <span>Logistic Regression</span>
-                </div>
-                <a href="https://github.com/ZwePP/Credit-Card-Fraud-Detection-Project" target="_blank" class="btn">View Code</a>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <h3>My Portfolio</h3>
-            <div class="project-details">
-                <p><strong>About:</strong> Portfolio website to showcase myself and projects</p>
-                <p>
-                    <strong>What it does:</strong>
-                    Share information about me, experience and my projects.
-                </p>
-                <div class="tech-stack">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScripts</span>
-                    <span>Gemini Code Assist</span>
-                </div>
-                <a href="https://github.com/ZwePP/Credit-Card-Fraud-Detection-Project" target="_blank" class="btn">View Code</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="bg-light">
-        <div class="container">
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>AI / ML</h3>
-                    <div class="skill-tags">
-                        <span>LangChain</span> 
-                        <span>HuggingFace</span> 
-                        <span>OpenAI</span>
-                        <span>RAG</span> 
-                        <span>Vector DBs</span>
-                        <span>NLP Processing</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Backend / Systems</h3>
-                    <div class="skill-tags">
-                        <span>FastAPI</span> <span>Python</span> <span>REST APIs</span> <span>Linux</span>
-                        <span>AWS</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Data</h3>
-                    <div class="skill-tags">
-                        <span>Pandas</span> <span>NumPy</span> <span>SQL</span> <span>Data Preprocessing</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools</h3>
-                    <div class="skill-tags">
-                        <span>Git</span><span>VS Code</span> <span>Postman</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience" class="container">
-        <h2>Experience</h2>
-        <div class="timeline-item">
-            <h3>Junior IT Support</h3>
-            <p style="color: #aaa; font-size: 0.9rem; margin-bottom: 0.5rem;">BNK Capital Myanmar Co.,Ltd | 2023 - 2024</p>
-            <ul>
-                <li>- IT technical Support to over 180 staffs and 38 branches onsite and remotely.</li>
-                <li>- Installing, monitoring and maintaining Network, CCTV, PABX and PA System. </li>
-                <li>- Collaborated with the IT team to maintain network infrastructure and ensure system security.</li>
-                <li>- Perform daily IT administration (checklist, documentation and asset control).</li>
-                <li>- Help design internal ticketing system.</li>
-                <li>- Contact and collaborate with vendors and third-party services.</li>
-                <li>- Attend meetings with Korea IT team and third party services.</li>
+            <ul id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-    </section>
+    </nav>
 
-    <section id="volunteer" class="bg-light">
-        <div class="container">
-            <h2>Volunteer</h2>
-            <div class="timeline-item">
-                <h3>AV Support - FOSSASIA</h3>
-                <p class="timeline-date">Oct 2025 - Mar 2026</p>
-                <ul>
-                    <li>- Delivered AV support for 2025-2026 FOSSASIA events across sessions and workshops.</li>
-                </ul>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <img src="img/profile.jpg" alt="Zwe Pyi Phyo" class="hero-img">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Zwe</span></h1>
+                <h2>AI Engineer</h2>
+                <p>Transforming data into actionable insights and building reliable systems. Passionate about AI, backend systems, and solving real-world problems.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="https://github.com/ZwePP" target="_blank" class="btn btn-secondary">GitHub</a>
+                    <a href="#" target="_blank" class="btn btn-secondary">LinkedIn</a>
+                </div>
             </div>
-            <div class="timeline-item">
-                <h3>Volunteer - .NET Thailand</h3>
-                <p class="timeline-date">2026</p>
-                <ul>
-                    <li>- Supported event execution for .NET Thailand 2026 with on-site volunteer duties.</li>
-                </ul>
-            </div>
-            <div class="timeline-item">
-                <h3>AV Support - FOSSASIA</h3>
-                <p class="timeline-date">Jan 2025 - Mar 2025</p>
-                <ul>
-                    <li>- Provided audio-visual technical support for FOSSASIA events, including setup, troubleshooting, and live operations.</li>
-                    <li>- Coordinated with event organizers, speakers, and production team to ensure seamless conference delivery.</li>
-                </ul>
-            </div>       
-            <div class="timeline-item">
-                <h3>Volunteer - .NET Thailand</h3>
-                <p class="timeline-date">2025</p>
-                <ul>
-                    <li>- Supported event execution for .NET Thailand 2026 with on-site volunteer duties.</li>
-                </ul>
-            </div>
-            
         </div>
     </section>
 
+    <!-- Tech Stack & Tools Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2>Technical Skills & Tools</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>AI / Machine Learning</h3>
+                    <div class="skill-tags">
+                        <span><i class="fas fa-link"></i> LangChain</span>
+                        <span><i class="fas fa-brain"></i> HuggingFace</span>
+                        <span><i class="fas fa-robot"></i> OpenAI</span>
+                        <span><i class="fas fa-database"></i> RAG</span>
+                        <span><i class="fas fa-cube"></i> Vector DBs</span>
+                        <span><i class="fas fa-language"></i> NLP</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend & Systems</h3>
+                    <div class="skill-tags">
+                        <span><i class="fab fa-python"></i> Python</span>
+                        <span><i class="fas fa-rocket"></i> FastAPI</span>
+                        <span><i class="fas fa-code"></i> REST APIs</span>
+                        <span><i class="fab fa-linux"></i> Linux</span>
+                        <span><i class="fab fa-aws"></i> AWS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Data & Databases</h3>
+                    <div class="skill-tags">
+                        <span><i class="fas fa-table"></i> Pandas</span>
+                        <span><i class="fas fa-calculator"></i> NumPy</span>
+                        <span><i class="fas fa-database"></i> SQL</span>
+                        <span><i class="fas fa-sliders-h"></i> Data Preprocessing</span>
+                        <span><i class="fas fa-server"></i> ChromaDB</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Platforms</h3>
+                    <div class="skill-tags">
+                        <span><i class="fab fa-git-alt"></i> Git</span>
+                        <span><i class="fas fa-code"></i> VS Code</span>
+                        <span><i class="fas fa-envelope"></i> Postman</span>
+                        <span><i class="fab fa-docker"></i> Docker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <section id="contact">
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2>Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Junior IT Support</h3>
+                        <p class="timeline-date">BNK Capital Myanmar Co., Ltd | 2023 - 2024</p>
+                        <ul>
+                            <li>Provided IT technical support to 180+ staff across 38 branches (onsite and remote)</li>
+                            <li>Installed, monitored, and maintained Network, CCTV, PABX, and PA systems</li>
+                            <li>Collaborated with IT team to maintain infrastructure and ensure system security</li>
+                            <li>Performed daily IT administration including documentation and asset control</li>
+                            <li>Helped design internal ticketing system</li>
+                            <li>Coordinated with vendors and third-party services</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>B.Sc Information Technology</h3>
+                        <p class="timeline-date">2023-2026</p>
+                        <p>GPA 4.0</p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Showcase Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>STIU Bot</h3>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-desc"><strong>AI-powered chatbot</strong> that answers university-related questions using Retrieval-Augmented Generation (RAG).</p>
+                        <p><strong>How it works:</strong> Uses vector database for similarity search and LangChain for intelligent response generation.</p>
+                        <div class="tech-stack">
+                            <span><i class="fab fa-python"></i> Python</span>
+                            <span><i class="fas fa-link"></i> LangChain</span>
+                            <span><i class="fas fa-brain"></i> HuggingFace</span>
+                            <span><i class="fas fa-server"></i> ChromaDB</span>
+                        </div>
+                        <a href="https://github.com/ZwePP/stiu_bot" target="_blank" class="btn btn-small">View Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Credit Card Fraud Detection</h3>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-desc"><strong>ML model</strong> trained to detect fraudulent transactions from imbalanced Kaggle dataset.</p>
+                        <p><strong>Approach:</strong> Dataset balanced to 50% fraud/50% non-fraud. Compared Logistic Regression and XGBoost models.</p>
+                        <div class="tech-stack">
+                            <span><i class="fab fa-python"></i> Python</span>
+                            <span><i class="fas fa-cube"></i> Scikit-Learn</span>
+                            <span><i class="fas fa-chart-bar"></i> XGBoost</span>
+                            <span><i class="fas fa-table"></i> Pandas</span>
+                            <span><i class="fas fa-chart-line"></i> Matplotlib</span>
+                        </div>
+                        <a href="https://github.com/ZwePP/Credit-Card-Fraud-Detection-Project" target="_blank" class="btn btn-small">View Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Portfolio Website</h3>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-desc"><strong>Responsive portfolio</strong> showcasing projects, skills, and professional experience.</p>
+                        <p><strong>Features:</strong> Smooth scrolling, mobile-first design, modern UI with clean aesthetics.</p>
+                        <div class="tech-stack">
+                            <span><i class="fab fa-html5"></i> HTML5</span>
+                            <span><i class="fab fa-css3-alt"></i> CSS3</span>
+                            <span><i class="fab fa-js-square"></i> JavaScript</span>
+                            <span><i class="fas fa-mobile-alt"></i> Responsive Design</span>
+                        </div>
+                        <a href="https://github.com/ZwePP" target="_blank" class="btn btn-small">View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
         <div class="container">
             <h2>Get In Touch</h2>
+            <p class="contact-intro">Have a project in mind or want to collaborate? Feel free to reach out!</p>
             <form id="contact-form">
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Your Message" rows="5"></textarea>
-                <button type="submit" class="btn">Send Message</button>
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Portfolio.</p>
+        <div class="container">
+            <p>&copy; 2026 Zwe Pyi Phyo. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
