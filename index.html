@@ -1,173 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zwe Pyi Phyo Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
-    <style>
-        @import "~@flaticon/flaticon-uicons/css/brands/all";
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zwe Pyi Phyo — Software &amp; Data Engineer</title>
+<meta name="description" content="Portfolio of Zwe Pyi Phyo, a software and data engineer specializing in backend development, APIs and applied machine learning.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav id="navbar">
-        <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-        <ul>
-            <li><a href="#home">Home</a></li></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="#home" class="nav-brand"><span class="mark">ZP</span> Zwe Pyi Phyo</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
     </nav>
+    <div class="nav-actions">
+      <a href="#contact" class="btn btn-primary btn-sm">Contact</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
 
-    <section id="home" class="hero">
-        <img src="img/profile.jpg" alt="Zwe Pyi Phyo" class="hero-img">
-        <div class="hero-content">
-            <h1>Hi, I'm <span class="highlight">Zwe</span></h1>
-            <h2>AI Systems Engineer (Student)</h2>
-            <p>With background in data science and tech support. My focus is turning data into an actionable insight and creating a reliable system.</p>
-            <div class="hero-btns">
-                <a href="#projects" class="btn">View Projects</a>
-                <a href="https://github.com/ZwePP" target="_blank" class="btn">
-                    Github
-                </a>
-                <a href="https://github.com/ZwePP" target="_blank" class="btn">
-                    LinkedIn
-                </a>
-            </div>
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Available for internships &amp; new grad roles</p>
+        <h1 class="hero-name">Zwe Pyi Phyo</h1>
+        <p class="hero-role">Software &amp; Data Engineering Intern</p>
+        <p class="hero-intro">Final-year IT student building backend systems, APIs, and applied ML tools. I like turning messy data and vague requirements into software that's reliable and easy to reason about.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="resume.pdf" download class="btn btn-secondary">Download Resume</a>
         </div>
-    </section>
-
-    <section id="projects" class="container">
-        <h2>Featured Projects</h2>
-        
-        <div class="project-card">
-            <h3>STIU Bot</h3>
-            <div class="project-details">
-                <p><strong>About:</strong> AI-powered chatbot that answers university-related questions using university handbook data.</p>
-                <p>
-                    <strong>What it does:</strong>
-                    The bot answers student queries about university, rules and policies. It uses Retrieval-Augmented Generation (RAG) to provide accurate, context-based responses. The handbook is stored in a vector database and the system performs similarity search.
-                </p>
-                <div class="tech-stack">
-                    <span>Python</span>
-                    <span>LangChain</span>
-                    <span>HuggingFace</span>
-                    <span>ChromaDB</span>
-                </div>
-                <a href="https://github.com/ZwePP/stiu_bot" target="_blank" class="btn">View Code</a>
-            </div>
+        <div class="hero-meta">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0116 0z"/><circle cx="12" cy="10" r="3"/></svg> Bangkok, Thailand</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> GPA 4.0 · B.Sc IT (Data Science)</span>
         </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 240 240" fill="none">
+          <rect x="20" y="20" width="200" height="200" rx="16" stroke="#d4d4d1" stroke-width="1.5"/>
+          <circle cx="120" cy="95" r="38" stroke="#b45309" stroke-width="2"/>
+          <path d="M60 200c0-38 27-62 60-62s60 24 60 62" stroke="#17181a" stroke-width="2"/>
+          <line x1="20" y1="150" x2="220" y2="150" stroke="#e6e6e4" stroke-width="1"/>
+          <line x1="60" y1="20" x2="60" y2="220" stroke="#e6e6e4" stroke-width="1"/>
+        </svg>
+      </div>
+    </div>
+  </section>
 
-        <div class="project-card">
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <p class="eyebrow">About</p>
+      <h2 class="section-title reveal">A bit about how I got here</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm a final-year <strong>B.Sc. Information Technology (Data Science)</strong> student at Stamford International University in Bangkok, currently holding a <strong>4.0 GPA</strong>. Before that, I completed a UK-accredited BTEC HND in Software Engineering at Gusto College in Yangon, graduating with all distinctions.</p>
+          <p>My background is a mix of hands-on IT support and hands-on software work — I spent a year keeping network infrastructure and internal tools running for a 38-branch organization before shifting fully into development. That experience left me with a strong instinct for building things that are dependable in production, not just in a demo.</p>
+          <p>These days I build backend APIs with <strong>FastAPI</strong>, work with relational and vector databases, and build applied ML and RAG pipelines using <strong>LangChain</strong> and <strong>Ollama</strong>. I enjoy the part of engineering where data, infrastructure, and product decisions meet.</p>
+        </div>
+        <div class="stat-grid reveal">
+          <div class="stat-card">
+            <div class="stat-num">4.0</div>
+            <div class="stat-label">GPA, B.Sc. IT (Data Science)</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">180+</div>
+            <div class="stat-label">Staff supported across 38 branches</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">3</div>
+            <div class="stat-label">Shipped projects, backend to ML</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">4</div>
+            <div class="stat-label">Languages spoken</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="wrap">
+      <p class="eyebrow">Skills</p>
+      <h2 class="section-title reveal">Tools I reach for</h2>
+      <p class="section-lede reveal">A working toolkit spanning backend development, data engineering, and applied machine learning.</p>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <h3>Languages</h3>
+          <div class="badge-row">
+            <span class="badge">Python</span><span class="badge">SQL</span><span class="badge">JavaScript</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Backend</h3>
+          <div class="badge-row">
+            <span class="badge">FastAPI</span><span class="badge">REST APIs</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Frontend</h3>
+          <div class="badge-row">
+            <span class="badge">HTML / CSS</span><span class="badge">JavaScript</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <h3>AI / ML</h3>
+          <div class="badge-row">
+            <span class="badge">Pandas</span><span class="badge">Scikit-learn</span><span class="badge">LangChain</span><span class="badge">Ollama</span><span class="badge">XGBoost</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Databases</h3>
+          <div class="badge-row">
+            <span class="badge">Microsoft SQL</span><span class="badge">SQLite</span><span class="badge">ChromaDB</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Tools</h3>
+          <div class="badge-row">
+            <span class="badge">Git</span><span class="badge">Linux</span><span class="badge">Excel</span><span class="badge">Power BI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="wrap">
+      <p class="eyebrow">Featured Projects</p>
+      <h2 class="section-title reveal">Things I've built</h2>
+      <p class="section-lede reveal">A mix of applied ML, full-stack, and data-focused projects — most started as a question I wanted a real answer to.</p>
+      <div class="project-grid">
+
+        <article class="project-card reveal">
+          <div class="project-thumb">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="8" width="36" height="26" rx="2"/><path d="M6 30l10-8 8 6 10-10 8 6"/><circle cx="16" cy="16" r="2"/></svg>
+          </div>
+          <div class="project-body">
+            <h3>STIU Bot — AI Knowledge Assistant</h3>
+            <p>A retrieval-augmented generation chatbot that answers student questions directly from the university handbook, built on a semantic document retrieval pipeline over a vector database.</p>
+            <div class="tech-row">
+              <span class="tech-pill">Python</span><span class="tech-pill">LangChain</span><span class="tech-pill">ChromaDB</span><span class="tech-pill">Ollama</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-secondary btn-sm" href="https://github.com/ZwePP/stiu_bot" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.03 3.26 9.29 7.79 10.8.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.17.69-3.84-1.36-3.84-1.36-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.72-1.53-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.06-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.14 1.17a10.9 10.9 0 015.72 0c2.18-1.48 3.14-1.17 3.14-1.17.62 1.58.23 2.75.11 3.04.73.8 1.17 1.82 1.17 3.06 0 4.37-2.67 5.34-5.21 5.62.41.36.77 1.08.77 2.17 0 1.57-.01 2.83-.01 3.22 0 .3.2.66.79.55A10.53 10.53 0 0023.5 12c0-6.27-5.23-11.5-11.5-11.5z"/></svg>
+                Code
+              </a>
+              <a class="btn btn-primary btn-sm" href="#contact">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-thumb">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="6" width="36" height="36" rx="2"/><line x1="6" y1="18" x2="42" y2="18"/><line x1="16" y1="18" x2="16" y2="42"/><line x1="29" y1="18" x2="29" y2="42"/></svg>
+          </div>
+          <div class="project-body">
+            <h3>School Management Software</h3>
+            <p>A full-stack school management platform with a RESTful API, covering student, class, and record CRUD operations backed by a normalized SQLite schema.</p>
+            <div class="tech-row">
+              <span class="tech-pill">Python</span><span class="tech-pill">FastAPI</span><span class="tech-pill">SQLite</span><span class="tech-pill">JavaScript</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-secondary btn-sm" href="https://github.com/ZwePP/School-Management-System" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.03 3.26 9.29 7.79 10.8.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.17.69-3.84-1.36-3.84-1.36-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.72-1.53-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.06-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.14 1.17a10.9 10.9 0 015.72 0c2.18-1.48 3.14-1.17 3.14-1.17.62 1.58.23 2.75.11 3.04.73.8 1.17 1.82 1.17 3.06 0 4.37-2.67 5.34-5.21 5.62.41.36.77 1.08.77 2.17 0 1.57-.01 2.83-.01 3.22 0 .3.2.66.79.55A10.53 10.53 0 0023.5 12c0-6.27-5.23-11.5-11.5-11.5z"/></svg>
+                Code
+              </a>
+              <a class="btn btn-primary btn-sm" href="#contact">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-thumb">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 40V20l8-8 8 8 8-16 8 12v24z"/><line x1="6" y1="40" x2="42" y2="40"/></svg>
+          </div>
+          <div class="project-body">
             <h3>Credit Card Fraud Detection</h3>
-            <div class="project-details">
-                <p><strong>About:</strong> Training a model to detect a fraud from a Kaggle imbalance dataset.</p>
-                <p>
-                    <strong>What it does:</strong>
-                    This project focuses on detecting fraudulent transactions using machine learning techniques. The dataset is cleaned and balanced to contain 50% fraud and 50% non-fraud samples. Two classification models are implemented and compared: Logistic Regression and XGBoost.
-                </p>
-                <div class="tech-stack">
-                    <span>Python</span>
-                    <span>Pandas</span>
-                    <span>Seaborn</span>
-                    <span>Matplotlib</span>
-                    <span>Scikit-Learn</span>
-                    <span>XGBoost</span>
-                    <span>Logistic Regression</span>
-                </div>
-                <a href="https://github.com/ZwePP/Credit-Card-Fraud-Detection-Project" target="_blank" class="btn">View Code</a>
+            <p>Trained and evaluated multiple ML models to flag fraudulent transactions in a heavily imbalanced dataset, comparing precision/recall trade-offs across approaches.</p>
+            <div class="tech-row">
+              <span class="tech-pill">Python</span><span class="tech-pill">Scikit-learn</span><span class="tech-pill">XGBoost</span><span class="tech-pill">Pandas</span>
             </div>
-        </div>
-
-        <div class="project-card">
-            <h3>My Portfolio</h3>
-            <div class="project-details">
-                <p><strong>About:</strong> Portfolio website to showcase myself and projects</p>
-                <p>
-                    <strong>What it does:</strong>
-                    Share information about me, experience and my projects.
-                </p>
-                <div class="tech-stack">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScripts</span>
-                    <span>Gemini Code Assist</span>
-                </div>
-                <a href="https://github.com/ZwePP/Credit-Card-Fraud-Detection-Project" target="_blank" class="btn">View Code</a>
+            <div class="project-actions">
+              <a class="btn btn-secondary btn-sm" href="https://github.com/ZwePP/Credit-Card-Fraud-Detection-Project" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.03 3.26 9.29 7.79 10.8.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.17.69-3.84-1.36-3.84-1.36-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.72-1.53-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.06-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.14 1.17a10.9 10.9 0 015.72 0c2.18-1.48 3.14-1.17 3.14-1.17.62 1.58.23 2.75.11 3.04.73.8 1.17 1.82 1.17 3.06 0 4.37-2.67 5.34-5.21 5.62.41.36.77 1.08.77 2.17 0 1.57-.01 2.83-.01 3.22 0 .3.2.66.79.55A10.53 10.53 0 0023.5 12c0-6.27-5.23-11.5-11.5-11.5z"/></svg>
+                Code
+              </a>
+              <a class="btn btn-primary btn-sm" href="#contact">Live Demo</a>
             </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="wrap">
+      <p class="eyebrow">Experience</p>
+      <h2 class="section-title reveal">Where I've spent my time</h2>
+      <p class="section-lede reveal">Work, education, and volunteering — roughly in the order it happened.</p>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div class="timeline-date">Jul 2024 — Present</div>
+          <h3>B.Sc. Information Technology (Data Science)</h3>
+          <div class="timeline-org">Stamford International University · Bangkok, Thailand</div>
+          <p>Currently maintaining a 4.0 GPA while focusing coursework and projects on data engineering, applied ML, and backend systems.</p>
         </div>
-    </section>
 
-    <section id="skills" class="bg-light">
-        <div class="container">
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>AI / ML</h3>
-                    <div class="skill-tags">
-                        <span>LangChain</span> 
-                        <span>HuggingFace</span> 
-                        <span>OpenAI</span>
-                        <span>RAG</span> 
-                        <span>Vector DBs</span>
-                        <span>NLP Processing</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Backend / Systems</h3>
-                    <div class="skill-tags">
-                        <span>FastAPI</span> <span>Python</span> <span>REST APIs</span> <span>Linux</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Data</h3>
-                    <div class="skill-tags">
-                        <span>Pandas</span> <span>NumPy</span> <span>SQL</span> <span>Data Preprocessing</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools</h3>
-                    <div class="skill-tags">
-                        <span>Git</span><span>VS Code</span> <span>Postman</span>
-                    </div>
-                </div>
-            </div>
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div class="timeline-date">2025 — 2026</div>
+          <h3>AV Support Volunteer</h3>
+          <div class="timeline-org">FOSSASIA · Bangkok, Thailand</div>
+          <p>Supported audio-visual operations for one of Asia's largest open-source technology conferences.</p>
         </div>
-    </section>
 
-    <section id="experience" class="container">
-        <h2>Experience</h2>
-        <div class="timeline-item">
-            <h3>Junior IT Support</h3>
-            <p style="color: #aaa; font-size: 0.9rem; margin-bottom: 0.5rem;">BNK Capital Myanmar Co.,Ltd | 2023 - 2024</p>
-            <p>Diagnosed and resolved hardware/software issues for over 200 workstations. Maintained campus network uptime and assisted in server migration tasks.</p>
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div class="timeline-date">2026</div>
+          <h3>Volunteer</h3>
+          <div class="timeline-org">IEEE ICMLAS · Bangkok, Thailand</div>
+          <p>Volunteered at the IEEE International Conference on Machine Learning and Applied Sciences.</p>
         </div>
-    </section>
 
-
-    <section id="contact" class="bg-light">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <form id="contact-form">
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Your Message" rows="5"></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div class="timeline-date">Aug 2023 — Apr 2024</div>
+          <h3>Junior IT Assistant</h3>
+          <div class="timeline-org">BNK Capital Myanmar</div>
+          <ul>
+            <li>Provided onsite and remote IT support for 180+ staff across 38 branches, resolving roughly 25 issues a week.</li>
+            <li>Assisted in designing an internal ticketing system.</li>
+            <li>Maintained network infrastructure, CCTV, PABX, and PA systems; configured and troubleshot routers and access points branch-wide.</li>
+          </ul>
         </div>
-    </section>
 
-    <footer>
-        <p>&copy; 2026 Portfolio.</p>
-    </footer>
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div class="timeline-date">Aug 2021 — Sept 2023</div>
+          <h3>BTEC HND in Computing (Software Engineering)</h3>
+          <div class="timeline-org">Gusto College · Yangon, Myanmar</div>
+          <p>UK-accredited Level 5 diploma, equivalent to two years of a Bachelor's degree. Graduated with all Distinctions, First Class Honours.</p>
+        </div>
 
-    <script src="script.js"></script>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <p class="eyebrow">Contact</p>
+      <h2 class="section-title reveal">Let's talk</h2>
+      <p class="section-lede reveal">Open to software and data engineering internships and new-grad roles. The fastest way to reach me is email.</p>
+
+      <div class="contact-grid">
+        <div class="reveal">
+          <div class="contact-list">
+            <a class="contact-link" href="mailto:zwepy02@gmail.com">
+              <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+              <span class="meta"><span class="label">Email</span>zwepy02@gmail.com</span>
+            </a>
+            <a class="contact-link" href="https://linkedin.com/in/zwephyo/" target="_blank" rel="noopener">
+              <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="8" y1="11" x2="8" y2="16"/><circle cx="8" cy="8" r="0.5" fill="currentColor"/><path d="M12 16v-3a2 2 0 014 0v3"/><line x1="12" y1="11" x2="12" y2="16"/></svg></span>
+              <span class="meta"><span class="label">LinkedIn</span>linkedin.com/in/zwephyo</span>
+            </a>
+            <a class="contact-link" href="https://github.com/ZwePP" target="_blank" rel="noopener">
+              <span class="icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.03 3.26 9.29 7.79 10.8.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.17.69-3.84-1.36-3.84-1.36-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.72-1.53-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.06-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.14 1.17a10.9 10.9 0 015.72 0c2.18-1.48 3.14-1.17 3.14-1.17.62 1.58.23 2.75.11 3.04.73.8 1.17 1.82 1.17 3.06 0 4.37-2.67 5.34-5.21 5.62.41.36.77 1.08.77 2.17 0 1.57-.01 2.83-.01 3.22 0 .3.2.66.79.55A10.53 10.53 0 0023.5 12c0-6.27-5.23-11.5-11.5-11.5z"/></svg></span>
+              <span class="meta"><span class="label">GitHub</span>github.com/ZwePP</span>
+            </a>
+          </div>
+          <a href="resume.pdf" download class="btn btn-secondary btn-block">Download Resume (PDF)</a>
+        </div>
+
+        <form class="reveal" id="contactForm" novalidate>
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send message</button>
+          <p class="form-note">This form is a static demo — messages aren't sent yet. Email me directly for a reply.</p>
+          <p class="form-success" id="formSuccess">Thanks — your message looks good. Please send it to zwepy02@gmail.com since this demo form isn't wired up yet.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <p>© 2026 Zwe Pyi Phyo. Built with Claude.</p>
+    <div class="footer-links">
+      <a href="mailto:zwepy02@gmail.com">Email</a>
+      <a href="https://linkedin.com/in/zwephyo/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/ZwePP" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js">
+  
+</script>
+
 </body>
 </html>
